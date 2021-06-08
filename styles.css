@@ -6,21 +6,28 @@
     max-width: 100%;
 }
 
+header {
+    /* Backgroud  */
+    background: url(../media/catcher.jpg) no-repeat center/100%;
+    color: #ffffff;
+    height: 20em;
+}
+
 header>nav {
+    /* TODO: Fixed the nav to the top of the page */
     width: 100%;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     opacity: 100%;
     /* Options design */
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px white;
 }
 
 header>nav>a {
     padding: 1em 2em;
     text-decoration: none;
     /* TODO: Change the color so doesn't melt with the background */
-    color: black;
+    color: #ffffff;
 }
 
 
@@ -36,15 +43,16 @@ header>nav>a {
 
 #catcher>h1 {
     margin-bottom: 1em;
+    letter-spacing: .1em;
 }
 
 #catcher>a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     opacity: 100%;
     /* Button like decoration */
     padding: .5em 2em;
-    border: 1px solid black;
+    border: 1px solid #ffffff;
     letter-spacing: .2em;
 }
 
@@ -78,7 +86,7 @@ header>nav>a {
 
 #secondSection {
     width: fit-content;
-    background-color: lightgrey;
+    background: linear-gradient(to bottom, #bab9be, #dcdadc);
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -86,7 +94,7 @@ header>nav>a {
 }
 
 #secondSection>div {
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
     text-align: center;
     font-size: 1.2em;
 }
@@ -94,5 +102,43 @@ header>nav>a {
 #secondSection>picture {
     max-width: 50%;
     height: auto;
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
 }
+
+
+/* Third section */
+
+#thirdSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#thirdSection>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#thirdSection>div>p {
+    flex: 1 1 auto;
+    /* text-align: end; */
+}
+
+.img3 {
+    width: 22em;
+    height: auto;
+}
+
+
+/* 
+.img3:nth-child(1) {
+    flex: 1 1 auto;
+} */
+
+.img3:nth-child(2) {
+    flex: 1 1 auto;
+    align-self: baseline;
+}
+
+.img3:nth-child(3) {}
