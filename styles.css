@@ -2,7 +2,8 @@
     border: 0;
     padding: 0;
     margin: 0;
-    background-color: white;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 header>nav {
@@ -23,6 +24,35 @@ header>nav>a {
 }
 
 
+/* Cacther section */
+
+#catcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+#catcher>h1 {
+    margin-bottom: 1em;
+}
+
+#catcher>a {
+    text-decoration: none;
+    color: black;
+    opacity: 100%;
+    /* Button like decoration */
+    padding: .5em 2em;
+    border: 1px solid black;
+    letter-spacing: .2em;
+}
+
+#catcher>a:hover {
+    transform: translate(.2em, .2em);
+}
+
+
 /* First section (duh)*/
 
 #firstSection {
@@ -30,6 +60,7 @@ header>nav>a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 #firstSection>h2 {
@@ -39,7 +70,6 @@ header>nav>a {
 
 #firstSection>h2+*p {
     width: 50%;
-    padding: 2em;
     text-justify: center;
 }
 
@@ -47,10 +77,22 @@ header>nav>a {
 /* Second section */
 
 #secondSection {
+    width: fit-content;
     background-color: lightgrey;
     display: flex;
     align-items: center;
-    /* opacity: 100%; */
-    flex-direction: column;
-    align-content: space-between;
+    flex-direction: row;
+    /* Text  */
+}
+
+#secondSection>div {
+    /* flex: 1 1 auto; */
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#secondSection>picture {
+    max-width: 50%;
+    height: auto;
+    /* flex: 1 1 auto; */
 }
